@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد - Tiny App FA</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>داشبورد - Tiny App FA</h1>
+            <div class="user-menu">
+                <span id="userInfo">خوش آمدید!</span>
+                <a href="links.html">مدیریت لینک‌ها</a>
+                <a href="#" onclick="logout(); return false;">خروج</a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div id="message" class="message" style="display: none;"></div>
+
+            <div class="shortener-form">
+                <h2>کوتاه کننده لینک</h2>
+                <form id="shortenForm">
+                    <div class="form-group">
+                        <label for="url">لینک اصلی:</label>
+                        <input type="url" id="url" placeholder="https://example.com" required>
+                    </div>
+                    <button type="submit" class="btn">کوتاه کردن لینک</button>
+                </form>
+
+                <div id="resultBox" class="result-box" style="display: none;">
+                    <label>لینک کوتاه شده:</label>
+                    <div class="short-url">
+                        <input type="text" id="shortUrl" readonly>
+                        <button onclick="copyToClipboard()" class="btn-copy">کپی</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

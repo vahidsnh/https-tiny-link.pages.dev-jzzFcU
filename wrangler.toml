@@ -1,0 +1,10 @@
+name = "tiny-app-fa"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "LINKS"
+id = "links-id"
+preview_id = "links-preview-id"
+
+[env.production]
+zone_id = "YOUR_ZONE_ID"

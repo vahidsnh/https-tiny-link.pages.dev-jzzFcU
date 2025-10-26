@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت لینک‌ها - Tiny App FA</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>مدیریت لینک‌ها</h1>
+            <div class="user-menu">
+                <span>خوش آمدید!</span>
+                <a href="dashboard.html">داشبورد</a>
+                <a href="#" onclick="logout(); return false;">خروج</a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div id="message" class="message" style="display: none;"></div>
+
+            <div class="links-container">
+                <h2>لینک‌های کوتاه شده</h2>
+                
+                <div id="emptyState" class="empty-state" style="display: none;">
+                    <p>هنوز هیچ لینکی ایجاد نکرده‌اید!</p>
+                    <a href="dashboard.html" class="btn">ایجاد لینک جدید</a>
+                </div>
+
+                <div id="linksTable" class="links-table" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>لینک اصلی</th>
+                                <th>لینک کوتاه</th>
+                                <th>تاریخ ایجاد</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody id="linksTbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/links.js"></script>
+</body>
+</html>
