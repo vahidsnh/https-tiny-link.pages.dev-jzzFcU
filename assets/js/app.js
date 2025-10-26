@@ -15,7 +15,7 @@ document.getElementById('shortenForm').addEventListener('submit', async function
     try {
         // استفاده از localStorage موقت
         const shortCode = generateShortCode();
-        const shortUrl = `https://tiny-link.pages.dev/${shortCode}`;
+        const shortUrl = `https://https-tiny-link-pages-dev-jzzfcu.pages.dev/${shortCode}`;
         
         // نمایش نتیجه
         document.getElementById('shortUrl').value = shortUrl;
@@ -67,4 +67,5 @@ function copyToClipboard() {
 function logout() {
     localStorage.removeItem('userLoggedIn');
     window.location.href = 'index.html';
+
 }
