@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+	font-family: YekanBakhFa;
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://rozup.ir/view/4137635/YekanBakhFaNum-SemiBold.woff2') format('woff2');		 
+}
+
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: YekanBakhFa, -apple-system, sans-serif;
     line-height: 1.6;
     background: #f8fafc;
     color: #334155;
@@ -271,4 +278,5 @@ th {
     border-radius: 8px;
     font-size: 14px;
     color: #475569;
+
 }
