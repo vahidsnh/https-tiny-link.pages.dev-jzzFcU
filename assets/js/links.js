@@ -28,15 +28,15 @@ function loadLinks() {
                     </a>
                 </td>
                 <td class="short-url">
-                <a href="https://tiny-link.pages.dev/${link.short}" target="_blank">
-                https://tiny-link.pages.dev/${link.short}
-            </a>
+                    <a href="https://https-tiny-link-pages-dev-jzzfcu.pages.dev/${link.short}" target="_blank">
+                        https://https-tiny-link-pages-dev-jzzfcu.pages.dev/${link.short}
+                    </a>
                 </td>
                 <td class="date">
                     ${new Date(link.createdAt).toLocaleDateString('fa-IR')}
                 </td>
                 <td class="actions">
-                    <button onclick="copyLink('https://tiny-link.pages.dev/${link.short}')" class="btn-copy">کپی</button>
+                    <button onclick="copyLink('https://https-tiny-link-pages-dev-jzzfcu.pages.dev/${link.short}')" class="btn-copy">کپی</button>
                     <button onclick="deleteLink(${index})" class="btn-delete">حذف</button>
                 </td>
             `;
