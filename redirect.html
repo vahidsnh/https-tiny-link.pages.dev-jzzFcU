@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>در حال انتقال...</title>
+    <style>
+        body { 
+            font-family: system-ui; 
+            text-align: center; 
+            padding: 50px; 
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <h2>در حال انتقال...</h2>
+    <p id="status">لطفاً منتظر بمانید</p>
+
+    <script>
+        // گرفتن کد از URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        
+        // پیدا کردن لینک در localStorage
+        const links = JSON.parse(localStorage.getItem('links') || '[]');
+        const link = links.find(l => l.short === code);
+        
+        if (link) {
+            document.getElementById('status').textContent = `در حال انتقال به: ${link.original}`;
+            // ریدایرکت بعد از 2 ثانیه
+            setTimeout(() => {
+                window.location.href = link.original;
+            }, 2000);
+        } else {
+            document.getElementById('status').textContent = 'لینک پیدا نشد!';
+            setTimeout(() => {
+                window.location.href = 'https://https-tiny-link-pages-dev-jzzfcu.pages.dev/';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
