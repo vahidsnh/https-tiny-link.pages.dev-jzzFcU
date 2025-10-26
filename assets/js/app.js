@@ -67,5 +67,4 @@ function copyToClipboard() {
 function logout() {
     localStorage.removeItem('userLoggedIn');
     window.location.href = 'index.html';
-
 }
