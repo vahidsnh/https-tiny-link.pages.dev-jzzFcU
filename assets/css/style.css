@@ -18,7 +18,7 @@ body {
     color: #334155;
     direction: rtl;
 }
-
+body,input,button,textarea,h1,h2,h3,h4,h5,h6{font-family: YekanBakhFa, sans-serif;}
 /* صفحه لاگین */
 .login-container {
     display: flex;
@@ -280,3 +280,4 @@ th {
     color: #475569;
 
 }
+
